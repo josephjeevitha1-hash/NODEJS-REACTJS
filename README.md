@@ -1,5 +1,8 @@
 # NODEJS-REACTJS
 Source code and learning materials for students..
+Resource to learn html css javascript
+Refer https://www.w3schools.com/
+or https://developer.mozilla.org/en-US/
 
 WEEK-1
 
