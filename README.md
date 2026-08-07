@@ -4,6 +4,13 @@ Source code and learning materials for students..
 WEEK-1
 
 Build a responsive web application for shopping cart with registration, login, catalog and cart pages using CSS3 features, flex and grid.
+    Project Structure:
+1.	login.html -Shows login page.
+2.	Register.html- Shows Registration page.
+3.	Catalog.html-Shows Product page
+4.	Cart.html-Shows product added to cart
+5.	styles.css - CSS file for styling the web pages.
+6.	Image folder
 To check responsiveness of website
 1.	Press F12 or Right-click → Inspect. 
 2.	Click the Toggle Device Toolbar icon (📱💻) or press Ctrl + Shift + M. 
