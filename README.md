@@ -15,7 +15,7 @@ Build a responsive web application for shopping cart with registration, login, c
 4.	Cart.html-Shows product added to cart
 5.	styles.css - CSS file for styling the web pages.
 6.	Image folder
-7.	
+   
 To check responsiveness of website
 1.	Press F12 or Right-click → Inspect. 
 2.	Click the Toggle Device Toolbar icon (📱💻) or press Ctrl + Shift + M. 
@@ -45,7 +45,7 @@ Add this before the closing </body> tag:
 
 WEEK-3
 Use JavaScript for doing client – side validation of the pages implemented in experiment 1 and experiment 2.
-To add client-side validation using JavaScript to the pages from the previous experiments we'll focus on validating user input in forms such as Login & Registration.
+Description:To add client-side validation using JavaScript to the pages from the previous experiments we'll focus on validating user input in forms such as Login & Registration.
 
 
 
