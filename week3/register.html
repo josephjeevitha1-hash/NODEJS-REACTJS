@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="register.js" defer></script>
+
+    <style>
+        .error{
+            color:red;
+            font-size:14px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <h2>Registration</h2>
+
+        <form action="login.html" onsubmit="return validateRegister()">
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <span id="nameError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+                <span id="phoneError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Address</label>
+                <textarea id="address" rows="4" placeholder="Enter your address"></textarea>
+                <span id="addressError" class="error"></span>
+            </div>
+
+            <button type="submit" class="btn">
+                Register
+            </button>
+
+        </form>
+
+        <p class="switch-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
