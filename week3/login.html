@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Login</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script src="login.js" defer></script>
+
+    <style>
+        .error{
+            color:red;
+            font-size:14px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <h2>Login</h2>
+
+        <form action="catalog.html" onsubmit="return validateLogin()">
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input type="email"
+                       id="email"
+                       placeholder="Enter your email">
+
+                <span id="emailError" class="error"></span>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Password</label>
+
+                <input type="password"
+                       id="password"
+                       placeholder="Enter your password">
+
+                <span id="passwordError" class="error"></span>
+
+            </div>
+
+            <button class="btn" type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p class="switch-link">
+            New User?
+            <a href="register.html">Register Here</a>
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
