@@ -15,6 +15,7 @@ Build a responsive web application for shopping cart with registration, login, c
 4.	Cart.html-Shows product added to cart
 5.	styles.css - CSS file for styling the web pages.
 6.	Image folder
+7.	
 To check responsiveness of website
 1.	Press F12 or Right-click → Inspect. 
 2.	Click the Toggle Device Toolbar icon (📱💻) or press Ctrl + Shift + M. 
@@ -34,5 +35,17 @@ Integrating the Bootstrap framework into your web application is an excellent wa
 	Bootstrap provides a wide range of CSS classes designed for responsive layouts, components, and interactive elements, which can significantly streamline the development process.
 	Below, we will go through adapting the previous project to utilize Bootstrap, focusing on the registration page as an example.
 	we can apply similar principles to the login, catalog, and cart pages.
+First, include Bootstrap in your HTML files. You can do this by adding the Bootstrap CDN links in the <head> section of your HTML documents. This example uses Bootstrap 5, but you should check for the latest version available.
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+Add this before the closing </body> tag:
+<Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+WEEK-3
+Use JavaScript for doing client – side validation of the pages implemented in experiment 1 and experiment 2.
+To add client-side validation using JavaScript to the pages from the previous experiments we'll focus on validating user input in forms such as Login & Registration.
+
 
 
