@@ -43,6 +43,8 @@ Add this before the closing </body> tag:
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
+
+
 WEEK-3
 Use JavaScript for doing client – side validation of the pages implemented in experiment 1 and experiment 2.
 Description:To add client-side validation using JavaScript to the pages from the previous experiments we'll focus on validating user input in forms such as Login & Registration.
