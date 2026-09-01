@@ -50,7 +50,9 @@ Use JavaScript for doing client – side validation of the pages implemented in 
 Description:To add client-side validation using JavaScript to the pages from the previous experiments we'll focus on validating user input in forms such as Login & Registration.
 WEEK-4:
 Explore the features of ES6 like arrow functions, callbacks, promises, async/await. Implement an application for reading the weather information from openweathermap.org and display the information in the form of a graph on the web page.
+Folder Structure
 <img width="480" height="556" alt="image" src="https://github.com/user-attachments/assets/85822b56-c0fc-4ae2-9c4b-d84b3a5197d6" />
+Generate API KEY FROM https://openweathermap.org/ and paste in place of "YOUR API KEY";
 
 
 
