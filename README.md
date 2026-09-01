@@ -50,8 +50,27 @@ Use JavaScript for doing client – side validation of the pages implemented in 
 Description:To add client-side validation using JavaScript to the pages from the previous experiments we'll focus on validating user input in forms such as Login & Registration.
 WEEK-4:
 Explore the features of ES6 like arrow functions, callbacks, promises, async/await. Implement an application for reading the weather information from openweathermap.org and display the information in the form of a graph on the web page.
+Step1:Install Node.js
+          Step2:Create a folder weatherapp
+          Step3:Install the Required npm Packages 
+           Command 1
+           npm init -y
+           Command 2
+           npm install express axios
+      Folder is created with 
+      WeatherApp/
+│
+├── node_modules/
+├── package.json
+├── package-lock.json
+create server.js file 
+Create folder public inside it create
+1.index.html
+2.style.css
+3.script.js
 Folder Structure
 <img width="480" height="556" alt="image" src="https://github.com/user-attachments/assets/85822b56-c0fc-4ae2-9c4b-d84b3a5197d6" />
+To run node server.js 
 Generate API KEY FROM https://openweathermap.org/ and paste in place of "YOUR API KEY";
 
 
