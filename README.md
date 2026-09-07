@@ -72,6 +72,7 @@ Folder Structure
 <img width="480" height="556" alt="image" src="https://github.com/user-attachments/assets/85822b56-c0fc-4ae2-9c4b-d84b3a5197d6" />
 To run node server.js 
 Generate API KEY FROM https://openweathermap.org/ and paste in place of "YOUR API KEY";
-
+WEEK-6 Develop a Node.js application to read, write and manipulate JSON files using FS module.
+Create two files server.js and students.json and start performing operations of fs module which is stored in students.json file.
 
 
