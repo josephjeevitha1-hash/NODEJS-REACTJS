@@ -74,5 +74,41 @@ To run node server.js
 Generate API KEY FROM https://openweathermap.org/ and paste in place of "YOUR API KEY";
 WEEK-6 Develop a Node.js application to read, write and manipulate JSON files using FS module.
 Create two files server.js and students.json and start performing operations of fs module which is stored in students.json file.
+WEEK-5 Develop a Node.js application that connects with the database(MYSQL) and perform CRUD operations
+Install required packages in terminal
+npm init -y
+npm install express mysql2
+Download Download MySQL Workbench for Windows
+https://dev.mysql.com/downloads/workbench/
+choose Windows (x86, 64-bit), MSI Installer
+After installation 
+Open MySQL Workbench
+Connect to database and set password use that password in server.js to connect to sql database
+Step 1: Create the database
+In MySQL Workbench, click SQL + / New SQL Tab.
+
+CREATE DATABASE college;
+Click the ⚡ Execute button.
+Then select the database:
+USE college;
+________________________________________
+Step 2: Create the students table
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    course VARCHAR(50)
+);
+Click ⚡ Execute.
+Now your table is created.
+You can check it with:
+SELECT * FROM students;
+Initially, it will be empty.
+Then run the code in vs code using node server.js 
+and execute CRUD operations by selecting the choices one by one and stored in college database.
+
+
+
 
 
