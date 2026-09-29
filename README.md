@@ -109,6 +109,25 @@ Then run the code in vs code using node server.js
 and execute CRUD operations by selecting the choices one by one and stored in college database.
 
 
+WEEK7-Develop a Node.js and Express-based controller that connects the shopping Cart web application developed in Experiment 1 with the database created in experiment 5.
+Terminal insatll packages
+npm init -y
+npm install express mysql2
+
+MySQL Database:
+CREATE DATABASE shopping_cart
+
+USE shopping_cart;
+CREATE TABLE cart (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    quantity INT NOT NULL
+);
+Run in terminal using node server.js
+
+
+
 
 
 
