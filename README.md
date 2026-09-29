@@ -125,6 +125,29 @@ CREATE TABLE cart (
     quantity INT NOT NULL
 );
 Run in terminal using node server.js
+WEEK9-Create a custom server using http module and explore the other modules of Node JS like OS, path, event.
+Output:node server.js
+the terminal output will be:
+System Information:
+Platform: 
+Architecture: 
+CPU Cores: 
+Total Memory: 
+Free Memory: 
+
+Joined Path:
+
+
+Server running at http://localhost:3000
+
+Custom Event Triggered: { message: 'Hello from custom event!' }
+
+When you open http://localhost:3000 in the browser, the output is:
+Hello, World!
+
+
+
+
 
 
 
