@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            Shopping Cart
+        </div>
+
+        <ul>
+            <li><a href="catalog.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="cart-page">
+
+    <h2>Shopping Cart</h2>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+
+        </thead>
+
+
+        <tbody id="cartBody"></tbody>
+
+    </table>
+
+
+    <div class="total">
+
+        Grand Total: ₹
+        <span id="grandTotal">0</span>
+
+    </div>
+
+
+    <button class="btn"
+            onclick="location.href='catalog.html'">
+
+        Continue Shopping
+
+    </button>
+
+</section>
+
+
+<script src="cart.js"></script>
+
+</body>
+</html>
