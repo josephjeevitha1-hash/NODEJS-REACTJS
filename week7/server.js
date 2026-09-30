@@ -22,7 +22,13 @@ db.connect(err => {
 });
 
 
-// Add product
+// Open catalog page
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/catalog.html");
+});
+
+
+// Add product to cart
 app.post("/add-to-cart", (req, res) => {
 
     const { name, price } = req.body;
@@ -70,7 +76,11 @@ app.put("/update-cart/:id", (req, res) => {
             "DELETE FROM cart WHERE id = ?",
             [id],
             err => {
-                if (err) return res.status(500).send("Error");
+
+                if (err) {
+                    return res.status(500).send("Error");
+                }
+
                 res.send("Deleted");
             }
         );
@@ -81,7 +91,11 @@ app.put("/update-cart/:id", (req, res) => {
             "UPDATE cart SET quantity = ? WHERE id = ?",
             [quantity, id],
             err => {
-                if (err) return res.status(500).send("Error");
+
+                if (err) {
+                    return res.status(500).send("Error");
+                }
+
                 res.send("Updated");
             }
         );
@@ -89,6 +103,7 @@ app.put("/update-cart/:id", (req, res) => {
 });
 
 
+// Start server
 app.listen(3000, () => {
     console.log("Server running at http://localhost:3000");
 });
