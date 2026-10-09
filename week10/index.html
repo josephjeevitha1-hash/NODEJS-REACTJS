@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Student Management System</h2>
+
+    <input type="number" id="id" placeholder="ID">
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="text" id="course" placeholder="Course">
+
+    <br><br>
+
+    <button onclick="addStudent()">Add</button>
+    <button onclick="updateStudent()">Update</button>
+    <button onclick="loadStudents()">View Students</button>
+
+    <br><br>
+
+    <table border="1">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Action</th>
+        </tr>
+
+        <tbody id="studentTable"></tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
 
