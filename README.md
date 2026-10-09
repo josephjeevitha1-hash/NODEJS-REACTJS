@@ -169,7 +169,7 @@ We can add,update,delete,read student data in student management system
 1.GET-Read student
 GET:
 http://localhost:3000/api/students
-
+ Output:take screenshot 
 2.POST-Add student
 POST
 http://localhost:3000/api/students
@@ -179,6 +179,7 @@ Ex:{
   "age": 20,
   "course": "cse"
 }
+ Output:take screenshot 
 3.PUT — Update Student
 PUT
 http://localhost:3000/api/students/1
@@ -188,10 +189,92 @@ Ex:{
   "age": 19,
   "course": "ds"
 }
+ Output: take screenshot 
 4.DELETE — Delete Student
 DELETE
 http://localhost:3000/api/students/1
-No request body is required.
+  Output:take screenshot 
+
+Week11-For the above application create authorized end points using JWT (JSON Web Token).
+First, install the jsonwebtoken package:
+npm init -y
+npm install express jsonwebtoken
+Output:node server.js
+Server running on http://localhost:3000
+Open Postman to test login and the protected student endpoints.
+Step 1: Login and generate a JWT token
+POST
+http://localhost:3000/login
+In Postman:
+1.	Select the POST method.
+2.	Enter http://localhost:3000/login.
+3.	Click Body → raw → JSON.
+{
+  "username": "admin",
+  "password": "1234"
+}
+4.Click Send.
+ Output:take screenshot 
+Copy the complete token value, without the quotation marks.
+
+Step 2: View students using the token
+GET
+http://localhost:3000/students
+1.	Select GET.
+2.	Enter http://localhost:3000/students.
+3.	Open the Authorization tab.
+4.	Select Bearer Token from the Type dropdown.
+5.	Paste the token copied in Step 1 into the Token field.
+6.	Click Send.
+     Output:take screenshot 
+Step 3: Add a student
+POST
+http://localhost:3000/students
+1.	Select POST and enter the URL.
+2.	Under Authorization → Bearer Token, paste your token.
+3.	Under Body → raw → JSON, enter:
+{
+  "id": 3,
+  "name": "Arun",
+  "age": 22
+}
+4. Click Send.
+ Output:take screenshot 
+Step 4: Update a student
+PUT
+http://localhost:3000/students/1
+1.	Select PUT.
+2.	Enter the URL above.
+3.	Include the same token under Authorization → Bearer Token.
+4.	Select Body → raw → JSON.
+5.	Enter:
+{
+  "name": "Anu",
+  "age": 21
+}
+6. Click Send.
+    Output:take screenshot 
+Step 5: Delete a student
+DELETE
+http://localhost:3000/students/1
+1.	Select DELETE.
+2.	Enter http://localhost:3000/students/1.
+3.	Include the token under Authorization → Bearer Token.
+4.	Click Send.
+ Output:take screenshot 
+
+Step 6: Test authorization without a token
+This is the most important test for your JWT assignment.
+1.	Send GET http://localhost:3000/students.
+2.	Remove the token from the Authorization tab, or select No Auth.
+3.	Click Send.
+   Output:take screenshot 
+If you provide an invalid token, the expected response is:token invalid
+ Output:take screenshot 
+
+
+
+
 
 
 
