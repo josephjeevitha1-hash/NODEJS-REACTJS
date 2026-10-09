@@ -145,8 +145,53 @@ Custom Event Triggered: { message: 'Hello from custom event!' }
 When you open http://localhost:3000 in the browser, the output is:
 Hello, World!
 
+WEEK10-Develop an express web application that can interact with REST API to perform CRUD operations on student data. (Use Postman)
+Packages
+npm init -y
+npm install express
+Download Postman
+https://www.postman.com/downloads/
+Steps to download
+3.	Click Download for Windows (64-bit).
+4.	Enter email id download link will be sent to mail
+5.	And download 
+Step 2:Install postman
+It ask whether free account or sign in or you're using the Lightweight API Client.
+For your Express CRUD lab, you do not need to sign in. The Lightweight API Client is enough to send GET, POST, PUT, and DELETE requests.
 
+In REST APIs:
+•	POST = Create (Add) 
+•	GET = Read 
+•	PUT = Update 
+•	DELETE = Delete
+Open postman and perform 4 rest api 
+We can add,update,delete,read student data in student management system
+1.GET-Read student
+GET:
+http://localhost:3000/api/students
 
+2.POST-Add student
+POST
+http://localhost:3000/api/students
+Select Body → raw → JSON and enter:
+Ex:{
+  "name": "Jenny",
+  "age": 20,
+  "course": "cse"
+}
+3.PUT — Update Student
+PUT
+http://localhost:3000/api/students/1
+Select Body → raw → JSON:
+Ex:{
+  "name": "Jenny",
+  "age": 19,
+  "course": "ds"
+}
+4.DELETE — Delete Student
+DELETE
+http://localhost:3000/api/students/1
+No request body is required.
 
 
 
