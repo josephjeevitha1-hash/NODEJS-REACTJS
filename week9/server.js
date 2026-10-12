@@ -29,7 +29,7 @@ console.log("Total Memory:", os.totalmem());
 console.log("Free Memory:", os.freemem());
 
 // Path Module
-const filePath = path.join(__dirname, "example.txt");
+const filePath = path.join(__dirname, "server.js");
 
 console.log("\nJoined Path:");
 console.log(filePath);
