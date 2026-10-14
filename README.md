@@ -271,7 +271,16 @@ This is the most important test for your JWT assignment.
    Output:take screenshot 
 If you provide an invalid token, the expected response is:token invalid
  Output:take screenshot 
+Week 8-Maintaining the transactional history of any user is very important. Explore the various session tracking mechanism (Cookies, HTTP Session)
+For both programs:
+npm init -y
+npm install express
 
+For the Cookies program (cookie.js):
+npm install cookie-parser
+
+For the HTTP Session program (session.js):
+npm install express-session
 
 
 
