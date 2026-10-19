@@ -281,7 +281,14 @@ npm install cookie-parser
 
 For the HTTP Session program (session.js):
 npm install express-session
+For cookie.js
+Output:node cookie.js
+take screenshot output of cookie history stored in browser when products added
+check cookie history inspect or press F12 Go to application scroll down you can see cookie and below server portno. clcik on it you can see history of transaction stored in browser and in terminal 
 
+For session.js
+Output:node session.js
+take screenshot output of session transaction stored in cookie browser only sid and terminal 
 
 
 
