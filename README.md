@@ -289,6 +289,7 @@ check cookie history inspect or press F12 Go to application scroll down you can 
 For session.js
 Output:node session.js
 take screenshot output of session transaction stored in cookie browser only sid and terminal 
+<img width="923" height="432" alt="image" src="https://github.com/user-attachments/assets/c2de944a-3459-4426-aab2-9e2facc026a3" />
 
 
 
