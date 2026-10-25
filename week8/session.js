@@ -35,11 +35,6 @@ app.get("/buy/:product", (req, res) => {
         headphone: "Headphone"
     };
 
-    // Check whether the product exists
-    if (!products[product]) {
-        return res.status(404).send("Product not found");
-    }
-
     // Create history array if it does not exist
     if (!req.session.history) {
         req.session.history = [];
