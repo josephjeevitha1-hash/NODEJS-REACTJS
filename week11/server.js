@@ -33,9 +33,7 @@ app.post("/login", (req, res) => {
         });
     }
 
-    res.status(401).json({
-        message: "Invalid username or password"
-    });
+    res.status(401).send("Invalid username or password");
 });
 
 // JWT Authentication Middleware
@@ -62,92 +60,63 @@ function authenticateToken(req, res, next) {
 
 // GET students
 app.get("/students", authenticateToken, (req, res) => {
-
     res.json(students);
 });
 
 // ADD student
+
 app.post("/students", authenticateToken, (req, res) => {
 
     const { id, name, age } = req.body;
 
-    if (id == null || !name || age == null) {
-        return res.status(400).send("ID, name and age are required");
-    }
-
-    if (!Number.isInteger(Number(id)) || Number(id) <= 0) {
-        return res.status(400).send("ID must be a positive integer");
-    }
-
-    if (!Number.isFinite(Number(age)) || Number(age) < 0) {
-        return res.status(400).send("Age must be a valid non-negative number");
-    }
-
+    // Check duplicate student ID
     if (students.some(s => s.id === Number(id))) {
         return res.status(409).send("Student ID already exists");
     }
 
-    const student = {
+    students.push({
         id: Number(id),
         name: name,
         age: Number(age)
-    };
-
-    students.push(student);
-
-    res.status(201).json({
-        message: "Student added successfully",
-        student: student
     });
+
+    res.send("Student added successfully");
 });
+
 
 // UPDATE student
 app.put("/students/:id", authenticateToken, (req, res) => {
 
-    const id = Number(req.params.id);
-
-    const student = students.find(s => s.id === id);
+    const student = students.find(
+        s => s.id === Number(req.params.id)
+    );
 
     if (!student) {
         return res.status(404).send("Student not found");
     }
 
-    const { name, age } = req.body;
+    student.name = req.body.name;
+    student.age = Number(req.body.age);
 
-    if (!name || age == null) {
-        return res.status(400).send("Name and age are required");
-    }
-
-    if (!Number.isFinite(Number(age)) || Number(age) < 0) {
-        return res.status(400).send("Age must be a valid non-negative number");
-    }
-
-    student.name = name;
-    student.age = Number(age);
-
-    res.json({
-        message: "Student updated successfully",
-        student: student
-    });
+    res.send("Student updated successfully");
 });
 
 // DELETE student
 app.delete("/students/:id", authenticateToken, (req, res) => {
 
-    const id = Number(req.params.id);
-
-    const student = students.find(s => s.id === id);
+    const student = students.find(
+        s => s.id === Number(req.params.id)
+    );
 
     if (!student) {
         return res.status(404).send("Student not found");
     }
 
-    students = students.filter(s => s.id !== id);
+    students = students.filter(
+        s => s.id !== Number(req.params.id)
+    );
 
-    res.json({
-        message: "Student deleted successfully",
-        students: students
-    });
+    res.send("Student deleted successfully");
 });
 
 // Start server
