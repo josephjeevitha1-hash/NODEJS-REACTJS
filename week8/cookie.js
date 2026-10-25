@@ -30,11 +30,6 @@ app.get("/buy/:product", (req, res) => {
 
     const product = req.params.product;
 
-    // Validate product
-    if (!products[product]) {
-        return res.status(404).send("Product not found");
-    }
-
     // Read existing history from cookie
     let history = req.cookies.history || "";
 
