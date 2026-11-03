@@ -1,1 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5fa;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+  background: white;
+  min-height: 100px;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  position: relative;
+  z-index: 2;
+}
+
+.brand h2 {
+  color: #111;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.brand p {
+  color: #475569;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #172554;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+  border-bottom: 3px solid #2563eb;
+}
+
+/* Login and Registration */
+form {
+  background: white;
+  width: 380px;
+  margin: 65px auto;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+form h2 {
+  color: #172554;
+  margin-bottom: 25px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #2563eb;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 15px;
+  background: #0756c9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #172554;
+  transform: translateY(-2px);
+}
+
+form p {
+  margin-top: 20px;
+  color: #555;
+}
+
+form a {
+  color: #0756c9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Dashboard Background Image */
+.dashboard {
+  min-height: 650px;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image:
+    linear-gradient(rgba(10,25,50,0.25),
+                    rgba(10,25,50,0.25)),
+    url("/gcet-building.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background: rgba(255,255,255,0.90);
+  backdrop-filter: blur(5px);
+  width: 700px;
+  max-width: 95%;
+  padding: 45px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+.cap {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.welcome-card h1 {
+  color: #172554;
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.welcome-card h2 {
+  color: #0756c9;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.welcome-card p {
+  color: #333;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.welcome-card button {
+  width: 220px;
+  margin-top: 20px;
+}
+
+/* About and Contact Content */
+.content {
+  background: white;
+  max-width: 750px;
+  margin: 70px auto;
+  padding: 45px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.content h1 {
+  color: #172554;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 15px;
+}
+
+/* Footer */
+footer {
+  background: #172554;
+  color: white;
+  padding: 22px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+footer span {
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .brand h2 {
+    font-size: 20px;
+  }
+
+  .welcome-card h1 {
+    font-size: 26px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .welcome-card {
+    padding: 25px 15px;
+  }
+
+  .welcome-card h1 {
+    font-size: 23px;
+  }
+
+  .dashboard {
+    min-height: 550px;
+  }
+}
