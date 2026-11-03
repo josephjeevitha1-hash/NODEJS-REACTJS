@@ -291,6 +291,38 @@ Output:node session.js
 take screenshot output of session transaction stored in cookie browser only sid and terminal 
 <img width="923" height="432" alt="image" src="https://github.com/user-attachments/assets/c2de944a-3459-4426-aab2-9e2facc026a3" />
 
+WEEK12-Create a react application for the student management system having registration, login, contact, about pages and implement routing to navigate through these pages.
+Create React Project 
+
+	npm create vite@latest folder name -- --template react
+
+	Select framework-React (using arrow keys)
+
+	Select Varient-Javascript
+
+	Which linter to use?
+    ESlint
+
+	Install with npm start now
+    Y
+Ctrl c
+ 	cd  folder name
+    npm install
+    npm install react-router-dom
+
+	Run project npm run dev
+    http://localhost:5174/
+ 
+ Go to folder with code .
+ 
+<img width="370" height="347" alt="image" src="https://github.com/user-attachments/assets/8007cb28-efd0-4f29-96e3-1eac75db0f44" />
+<img width="448" height="216" alt="image" src="https://github.com/user-attachments/assets/550ace09-06b9-43c4-9b6b-6b6942a9f8ad" />
+Open App.jsx and replace code 
+and Open App.css and replace code
+Run with npm run dev
+Take screenshot of each page 
+Note-First register and with same email and pwd you can login and enter dashboard
+
 
 
 
