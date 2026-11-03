@@ -306,7 +306,10 @@ Create React Project
 	Install with npm start now
     Y
 Ctrl c
+
  	cd  folder name
+
+	
     npm install
     npm install react-router-dom
 
