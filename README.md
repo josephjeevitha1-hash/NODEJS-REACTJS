@@ -331,6 +331,7 @@ Note: Install with npm start now
 	error 
 Ctrl c
 and select no and run these commands
+
 npm uninstall vite @vitejs/plugin-react
 npm uninstall vite @vitejs/plugin-react
 npm install -D vite@6 @vitejs/plugin-react@4 and follow rest steps 
