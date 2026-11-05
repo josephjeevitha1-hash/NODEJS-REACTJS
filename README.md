@@ -326,6 +326,14 @@ Run with npm run dev
 Take screenshot of each page 
 Note-First register and with same email and pwd you can login and enter dashboard
 
+Note: Install with npm start now
+    Y
+	error 
+Ctrl c
+and select no and run these commands
+npm uninstall vite @vitejs/plugin-react
+npm uninstall vite @vitejs/plugin-react
+npm install -D vite@6 @vitejs/plugin-react@4 and follow rest steps 
 
 
 
